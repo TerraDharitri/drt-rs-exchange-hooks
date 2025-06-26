@@ -1,0 +1,59 @@
+[package]
+name = "fees-collector"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies.dharitri-sc]
+version = "=1.14.0"
+features = ["dcdt-token-payment-legacy-decode"]
+
+# [dependencies.dharitri-sc]
+# path = "/home/kasia/documents/repos/my_works-main/rs-sdks/drt-rs-sdk-0.53.0/framework/base"
+# features = ["dcdt-token-payment-legacy-decode"]
+
+[dependencies.dharitri-sc-modules]
+version = "=1.14.0"
+
+# [dependencies.dharitri-sc-modules]
+# path = "/home/kasia/documents/repos/my_works-main/rs-sdks/drt-rs-sdk-0.53.0/contracts/modules"
+
+[dependencies.energy-query]
+path = "../common-modules/energy-query"
+
+[dependencies.week-timekeeping]
+path = "../common-modules/week-timekeeping"
+
+[dependencies.weekly-rewards-splitting]
+path = "../common-modules/weekly-rewards-splitting"
+
+[dependencies.locking_module]
+path = "../../common/modules/locking_module"
+
+[dependencies.utils]
+path = "../../common/modules/utils"
+
+[dependencies.sc_whitelist_module]
+path = "../../common/modules/sc_whitelist_module"
+
+[dependencies.common-types]
+path = "../common-types"
+
+[dependencies.common_errors]
+path = "../../common/common_errors"
+
+[dev-dependencies]
+num-bigint = "0.4.2"
+
+[dev-dependencies.dharitri-sc-scenario]
+version = "=1.14.0"
+
+# [dev-dependencies.dharitri-sc-scenario]
+# path = "/home/kasia/documents/repos/my_works-main/rs-sdks/drt-rs-sdk-0.53.0/framework/scenario"
+
+[dev-dependencies.sc_whitelist_module]
+path = "../../common/modules/sc_whitelist_module"
