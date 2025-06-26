@@ -1,0 +1,19 @@
+[package]
+name = "permissions_hub_module"
+version = "0.0.0"
+authors = ["contact@dharitri.org"]
+edition = "2021"
+
+[lib]
+path = "src/permissions_hub_module.rs"
+
+[dependencies.permissions-hub]
+path = "../../../permissions-hub"
+
+[dependencies.dharitri-sc]
+version = "=1.14.0"
+features = ["dcdt-token-payment-legacy-decode"]
+
+# [dependencies.dharitri-sc]
+# path = "/home/kasia/documents/repos/my_works-main/rs-sdks/drt-rs-sdk-0.53.0/framework/base"
+# features = ["dcdt-token-payment-legacy-decode"]
